@@ -25,7 +25,7 @@ public class IndexModel : PageModel
     [BindProperty(SupportsGet = true)]
     public string? SearchString { get; set; }
 
-    public SelectList? Genres { get; set; }
+    public SelectList? Years { get; set; }
 
     [BindProperty(SupportsGet = true)]
     public DateTime? PaintingYear { get; set; }
@@ -33,8 +33,8 @@ public class IndexModel : PageModel
     public async Task OnGetAsync()
     {
         IQueryable<DateTime> yearQuery = from p in _context.Painting
-                                           orderby p.Year
-                                           select p.Year;
+                                         orderby p.Year
+                                         select p.Year;
 
         var paintings = from p in _context.Painting
                      select p;
@@ -43,7 +43,9 @@ public class IndexModel : PageModel
             paintings = paintings.Where(s => s.Title.Contains(SearchString));
         }
 
-        if (!string.IsNullOrEmpty(PaintingYear))
+        DateTime? dat = PaintingYear;
+
+        if (dat.HasValue)
         {
             paintings = paintings.Where(x => x.Year == PaintingYear);
         }
