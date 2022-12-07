@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesBlehNmah.Data;
 
@@ -10,9 +11,11 @@ using RazorPagesBlehNmah.Data;
 namespace RazorPagesBlehNmah.Migrations
 {
     [DbContext(typeof(RazorPagesGalleryContext))]
-    partial class RazorPagesGalleryContextModelSnapshot : ModelSnapshot
+    [Migration("20221207174627_coverimage")]
+    partial class coverimage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
