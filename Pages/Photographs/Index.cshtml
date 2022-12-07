@@ -2,59 +2,38 @@
 @model RazorPagesBlehNmah.Pages.Photographs.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Photographs";
 }
 
-<h1>Index</h1>
+<h1>Photographs</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Photograph[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photograph[0].Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photograph[0].Location)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photograph[0].MediaLocation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photograph[0].Collection)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Photograph) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MediaLocation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Collection.CollectionID)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model.Photograph)
+    {
+        <div class="col">
+            <div class="card">
+                <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.Title)">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </h5>
+                    <p class="card-text">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.Collection.CollectionName)</li>
+                </ul>
+                <div class="card-body">
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        @Html.DisplayFor(modelItem => item.Location), @Html.DisplayFor(modelItem => item.Year)
+                    </small>
+                </div>
+            </div>
+        </div>
+    }
+</div>

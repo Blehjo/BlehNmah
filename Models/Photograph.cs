@@ -11,6 +11,8 @@ public class Photograph
 
     public string? Title { get; set; }
 
+    public string? Description { get; set; }
+
     [DataType(DataType.Date)]
     public DateTime Year { get; set; }
 

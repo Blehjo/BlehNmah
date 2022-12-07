@@ -2,41 +2,28 @@
 @model RazorPagesBlehNmah.Pages.Collections.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Collections";
 }
 
-<h1>Index</h1>
+<h1>Collections</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Collection[0].CollectionName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Collection[0].Year)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Collection) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CollectionName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.CollectionID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.CollectionID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.CollectionID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div>
+    @foreach (var item in Model.Collection)
+        {
+        <div class="card mb-3">
+            <img src="@Html.DisplayFor(modelItem => item.CoverImage)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @Html.DisplayFor(modelItem => item.CollectionName)
+                </h5>
+                <p class="card-text">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </p>
+                <p class="card-text"><small class="text-muted">@Html.DisplayFor(modelItem => item.Year)</small></p>
+                <div>
+                    <a asp-page="./Details" asp-route-id="@item.CollectionID">Details</a>
+                </div>
+            </div>
+        </div>
+        }
+</div>

@@ -10,6 +10,10 @@ public class Collection
     [Display(Name = "Collection")]
     public string? CollectionName { get; set; }
 
+    public string? CoverImage { get; set; }
+
+    public string? Description { get; set; }
+
     public DateTime Year { get; set; }
 
     public virtual ICollection<Painting>? Paintings { get; set; }
