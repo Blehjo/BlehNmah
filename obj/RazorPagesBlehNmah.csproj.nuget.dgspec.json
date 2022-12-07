@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj": {}
+    "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj": {}
   },
   "projects": {
-    "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj": {
+    "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj",
+        "projectUniqueName": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj",
         "projectName": "RazorPagesBlehNmah",
-        "projectPath": "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj",
+        "projectPath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj",
         "packagesPath": "/Users/blehjo/.nuget/packages/",
-        "outputPath": "/Users/blehjo/projects/BlehNmah/obj/",
+        "outputPath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/blehjo/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "EntityFramework.Functions": {
               "target": "Package",
               "version": "[1.5.0, )"

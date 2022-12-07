@@ -1,25 +1,24 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RazorPagesBlehNmah.DAL;
-//using RazorPagesBlehNmah.Data;
-//using RazorPagesBlehNmah.Data;
+using RazorPagesBlehNmah.Data;
+using RazorPagesBlehNmah.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-//builder.Services.AddDbContext<RazorPagesCollectionContext>(options =>
-//    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesCollectionContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesCollectionContext' not found.")));
-//builder.Services.AddDbContext<Gallery>(options =>
-//    options.UseSqlite(builder.Configuration.GetConnectionString("Gallery") ?? throw new InvalidOperationException("Connection string 'Gallery' not found.")));
-//builder.Services.AddDbContext<RazorPagesCollectionContext>(options =>
-//    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesCollectionContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesCollectionContext' not found.")));
+builder.Services.AddDbContext<RazorPagesGalleryContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesGalleryContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesGalleryContext' not found.")));
 
 var app = builder.Build();
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var services = scope.ServiceProvider;
-//}
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
