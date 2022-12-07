@@ -9,57 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPagesBlehNmah
 build_property.RootNamespace = RazorPagesBlehNmah
-build_property.ProjectDir = /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/
+build_property.ProjectDir = /Users/blehjo/projects/BlehNmah/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah
+build_property.MSBuildProjectDirectory = /Users/blehjo/projects/BlehNmah
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Error.cshtml]
+[/Users/blehjo/projects/BlehNmah/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/blehjo/projects/BlehNmah/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Index.cshtml]
+[/Users/blehjo/projects/BlehNmah/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/blehjo/projects/BlehNmah/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/_ViewImports.cshtml]
+[/Users/blehjo/projects/BlehNmah/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/_ViewStart.cshtml]
+[/Users/blehjo/projects/BlehNmah/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Shared/_Layout.cshtml]
+[/Users/blehjo/projects/BlehNmah/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/blehjo/projects/BlehNmah/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6yx7czqzj2

@@ -12,24 +12,37 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light bg-gradient border-bottom box-shadow mb-3 position-relative">
             <div class="container">
-                <a class="navbar-brand" asp-page="/Paintings/Index">Painting</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Bleh Nmah</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Collections/Index">Collections</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Paintings/Index">Paintings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Photographs/Index">Photographs</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/About">About Me</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <form class="d-flex position-absolute mt-2 top-0 start-50 translate-middle-x" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input type="submit" value="Filter" />
                 </form>
             </div>
         </nav>
@@ -42,7 +55,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - RazorPagesBlehNmah - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - Bleh Nmah - <a asp-area="" asp-page="/About">About Me</a>
         </div>
     </footer>
 
