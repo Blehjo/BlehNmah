@@ -1,55 +1,51 @@
-@page
+@page "{id:int}"
 @model RazorPagesBlehNmah.Pages.Paintings.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.Painting.Title;
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>Painting</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.Year)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.Year)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.Medium)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.Medium)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.Location)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.Location)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.MediaLocation)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.MediaLocation)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Painting.Collection)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Painting.Collection.CollectionID)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Painting?.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="@Html.DisplayFor(model => model.Painting.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(model => model.Painting.Title)">
+        </div>
+    </div>
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Painting.Title)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Painting.Title)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Painting.Year)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Painting.Year)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Painting.Medium)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Painting.Medium)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Painting.Location)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Painting.Location)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Painting.Collection)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Painting.Collection.CollectionName)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-page="./Index">Back to List</a>
+    </div>
 </div>

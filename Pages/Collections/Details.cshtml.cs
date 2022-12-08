@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesBlehNmah.Models;
 using RazorPagesBlehNmah.Data;
+using RazorPagesBlehNmah.Models;
 
 namespace RazorPagesBlehNmah.Pages.Collections
 {
     public class DetailsModel : PageModel
     {
-        private readonly RazorPagesGalleryContext _context;
+        private readonly RazorPagesBlehNmah.Data.RazorPagesGalleryContext _context;
 
-        public DetailsModel(RazorPagesGalleryContext context)
+        public DetailsModel(RazorPagesBlehNmah.Data.RazorPagesGalleryContext context)
         {
             _context = context;
         }

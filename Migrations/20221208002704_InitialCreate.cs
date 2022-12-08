@@ -18,6 +18,8 @@ namespace RazorPagesBlehNmah.Migrations
                     CollectionID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     CollectionName = table.Column<string>(type: "TEXT", nullable: true),
+                    CoverImage = table.Column<string>(type: "TEXT", nullable: true),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
                     Year = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -33,6 +35,7 @@ namespace RazorPagesBlehNmah.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     CollectionID = table.Column<int>(type: "INTEGER", nullable: true),
                     Title = table.Column<string>(type: "TEXT", nullable: true),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
                     Year = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Medium = table.Column<string>(type: "TEXT", nullable: true),
                     Location = table.Column<string>(type: "TEXT", nullable: true),
@@ -56,6 +59,7 @@ namespace RazorPagesBlehNmah.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     CollectionID = table.Column<int>(type: "INTEGER", nullable: true),
                     Title = table.Column<string>(type: "TEXT", nullable: true),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
                     Year = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Location = table.Column<string>(type: "TEXT", nullable: true),
                     MediaLocation = table.Column<string>(type: "TEXT", nullable: true)

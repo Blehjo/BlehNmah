@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkDP4rqwuN7maRllaAoLThPwV1rJP/VEkLIrZOx8tmFKL1Q8UIgEBdaTsT2MEnWlAOmmXu8Rh02eE6No7DEBEQ==",
+  "dgSpecHash": "vDAUDDb9BAVPOmsBDk7GExg3Nn9gTUGF3Vy0egW5Gi1rfx34p2EpojotCX6w1HubWgitseFZlKQSn07fW7/hPQ==",
   "success": true,
-  "projectFilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj",
+  "projectFilePath": "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj",
   "expectedPackageFiles": [
     "/Users/blehjo/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/blehjo/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

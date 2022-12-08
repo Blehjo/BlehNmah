@@ -11,7 +11,7 @@ using RazorPagesBlehNmah.Data;
 namespace RazorPagesBlehNmah.Migrations
 {
     [DbContext(typeof(RazorPagesGalleryContext))]
-    [Migration("20221207090710_InitialCreate")]
+    [Migration("20221208002704_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -27,6 +27,12 @@ namespace RazorPagesBlehNmah.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("CollectionName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CoverImage")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Year")
@@ -45,6 +51,9 @@ namespace RazorPagesBlehNmah.Migrations
 
                     b.Property<int?>("CollectionID")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Location")
                         .HasColumnType("TEXT");
@@ -76,6 +85,9 @@ namespace RazorPagesBlehNmah.Migrations
 
                     b.Property<int?>("CollectionID")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Location")
                         .HasColumnType("TEXT");

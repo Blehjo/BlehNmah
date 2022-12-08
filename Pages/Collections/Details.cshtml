@@ -1,31 +1,42 @@
-@page
-@model RazorPagesBlehNmah.Pages.Collections.DetailsModel
+@page "{id:int}"
+@model RazorPagesBlehNmah.Pages.Paintings.IndexModel
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+@*<h1>@Html.DisplayNameFor(model => model.Painting.Title)</h1>*@
 
-<div>
-    <h4>Collection</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Collection.CollectionName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Collection.CollectionName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Collection.Year)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Collection.Year)
-        </dd>
-    </dl>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model.Painting)
+    {
+        <div class="col">
+            <div class="card">
+                <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.Title)">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </h5>
+                    <p class="card-text">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.Medium)</li>
+                    <li class="list-group-item">@Html.DisplayFor(modelItem => item.Collection.CollectionName)</li>
+                </ul>
+                <div class="card-body">
+                    <a asp-page="../Paintings/Details" asp-route-id="@item.Id">Details</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        @Html.DisplayFor(modelItem => item.Location), @Html.DisplayFor(modelItem => item.Year)
+                    </small>
+                </div>
+            </div>
+        </div>
+    }
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Collection?.CollectionID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>
