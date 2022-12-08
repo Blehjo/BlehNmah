@@ -13,39 +13,45 @@
     </div>
     <div>
         <dl class="row">
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Painting.Title)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Painting.Title)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
+                @Html.DisplayNameFor(model => model.Painting.Description)
+            </dt>
+            <dd class="display col-sm-8">
+                @Html.DisplayFor(model => model.Painting.Description)
+            </dd>
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Painting.Year)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Painting.Year)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Painting.Medium)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Painting.Medium)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Painting.Location)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Painting.Location)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Painting.Collection)
             </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Painting.Collection.CollectionName)
+            <dd class="display col-sm-8">
+                @Html.DisplayFor(model => model.Painting.CollectionID)
             </dd>
         </dl>
     </div>
     <div>
-        <a asp-page="./Index">Back to List</a>
+        <a asp-page="../Collections/Details/" asp-route-id="@Model.Painting?.CollectionID">More From Collection</a>
     </div>
 </div>

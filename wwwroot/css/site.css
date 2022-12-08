@@ -26,3 +26,11 @@ body {
     height: 15vw;
     object-fit: cover;
 }
+
+.category {
+    font-size: 150%;
+}
+
+.display {
+    font-size: 150%;
+}
