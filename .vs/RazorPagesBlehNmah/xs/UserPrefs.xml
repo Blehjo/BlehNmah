@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{E045C135-5114-4704-AFB3-98F13CB336BE}|https">
-  <MonoDevelop.Ide.ItemProperties.RazorPagesBlehNmah PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Paintings/Details.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyJSONFile.json">
     <Files>
-      <File FileName="Pages/Paintings/Index.cshtml" Line="29" Column="23" />
-      <File FileName="Pages/Paintings/Details.cshtml" Line="5" Column="25" />
+      <File FileName="Pages/Paintings/Details.cshtml" />
+      <File FileName="Pages/Photographs/Details.cshtml" />
+      <File FileName="Pages/Paintings/Index.cshtml" />
+      <File FileName="Models/Painting.cs" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml" Line="14" Column="165" />
+      <File FileName="EmptyJSONFile.json" Line="172" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,28 +14,17 @@
           <Node name="RazorPagesBlehNmah" expanded="True">
             <Node name="RazorPagesBlehNmah" expanded="True">
               <Node name="Migrations" selected="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Collections" expanded="True" />
-                <Node name="Paintings" expanded="True">
-                  <Node name="Details.cshtml" expanded="True" />
-                  <Node name="Index.cshtml" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RazorPagesBlehNmah PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
