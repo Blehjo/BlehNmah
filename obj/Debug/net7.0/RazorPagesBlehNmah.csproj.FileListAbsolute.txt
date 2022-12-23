@@ -625,3 +625,5 @@
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/blehjo/projects/BlehNmah/bin/Debug/net7.0/paintings.json
+/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/paintings.json
+/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/collections.json
