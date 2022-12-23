@@ -11,7 +11,7 @@ using RazorPagesBlehNmah.Data;
 namespace RazorPagesBlehNmah.Migrations
 {
     [DbContext(typeof(RazorPagesGalleryContext))]
-    [Migration("20221223110724_InitialCreate")]
+    [Migration("20221223115720_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
