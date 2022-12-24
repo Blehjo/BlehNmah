@@ -10,25 +10,14 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach (var item in Model.Painting)
     {
-        <div class="col">
-            <div class="card">
-                <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.Title)">
-                <div style="text-align: center;" class="card-body">
-                    <h5 class="card-title">
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </h5>
+        <div class="mt-4 col">
+            <a asp-page="./Details" asp-route-id="@item.Id">
+                <div style="position: relative; text-align: center;" class="card">
+                    <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.Title)">
+                    <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
                 </div>
-                <div style="text-align: center; color: white; margin-bottom: 1rem;" class="row row-cols-2">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" asp-page="./Details" asp-route-id="@item.Id">Details</a></button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Quick View</button>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
-
         <div class="modal fade @item.Title" id="exampleModal" tabindex="-1" aria-labelledby="@item.Title" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
