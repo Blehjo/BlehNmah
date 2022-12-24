@@ -627,3 +627,4 @@
 /Users/blehjo/projects/BlehNmah/bin/Debug/net7.0/paintings.json
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/paintings.json
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/bin/Debug/net7.0/collections.json
+/Users/blehjo/projects/BlehNmah/bin/Debug/net7.0/collections.json

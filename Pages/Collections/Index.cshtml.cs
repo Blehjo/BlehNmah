@@ -19,13 +19,16 @@ namespace RazorPagesBlehNmah.Pages.Collections
             _context = context;
         }
 
-        public IList<Collection> Collection { get;set; } = default!;
+        public IList<Collection> Collection { get; set; } = default!;
+
+        public IList<Painting> Painting { get; set; } = default!;
 
         public async Task OnGetAsync()
         {
             if (_context.Collection != null)
             {
                 Collection = await _context.Collection.ToListAsync();
+                Painting = await _context.Painting.ToListAsync();
             }
         }
     }

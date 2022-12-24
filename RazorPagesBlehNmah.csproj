@@ -19,6 +19,7 @@
     <None Remove="Pages\Collections\" />
     <None Remove="Pages\Paintings\" />
     <None Remove="Pages\Photographs\" />
+    <None Remove="RazorPagesBlehNmah.Data.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
