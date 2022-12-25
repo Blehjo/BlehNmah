@@ -11,13 +11,13 @@
     @foreach (var item in Model.Painting)
     {
         <div class="mt-4 col">
-            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-@(item.Id)">
+            <a role="button" data-bs-toggle="modal" data-bs-target="#modal-@(item.Id)">
                 <div style="position: relative; text-align: center;" class="card">
                     <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.Title)">
                 </div>
             </a>
         </div>
-        <div style="" class="modal fade @item.Title" id="exampleModal-@(item.Id)" tabindex="-1" aria-labelledby="@item.Title" aria-hidden="true">
+        <div style="" class="modal fade @item.Title" id="modal-@(item.Id)" tabindex="-1" aria-labelledby="@item.Title" aria-hidden="true">
             <div style="text-align: center;" class="modal-dialog modal-lg">
                 <div class="card">
                     <img style="width: auto; height: auto;" src="@Html.DisplayFor(modelItem => item.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.Title)">
