@@ -34,24 +34,24 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-body">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         @foreach (var item in Model.Painting)
                         {
                             @if (Convert.ToInt32(ViewContext.RouteData.Values["id"]) == item.CollectionID)
                             {
-                                <div class="carousel-item">
+                                <div class="carousel-item active">
                                     <a asp-page="../Paintings/Details" asp-route-id="@item.Id">
                                         <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" style="border-radius: .5rem; width: 100%; height: auto; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.Title)">
                                     </a>
                                 </div>
                             }
                         }
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
