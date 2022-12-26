@@ -6,11 +6,27 @@
 <h1>@ViewData["Title"]</h1>
 
 <div class="row rows-col-1" style="text-align: center;">
-    <img src="https://i.imgur.com/2cZ2f9o.jpg" alt="profile-picture" style="border-radius: 1rem; width: 100rem; height: 40rem; object-fit: contain;" />
-    <div style="margin: auto; margin-top: 2rem; width: 50rem; text-align: left;">
+    <div class="col-6">
+    <img src="https://i.imgur.com/2cZ2f9o.jpg" alt="profile-picture" style="border-radius: 1rem; width: 100%; height: auto; object-fit: cover;" />
+    <div style="margin: auto; margin-top: 2rem; text-align: left;">
         <p>
             My name is Bleh Seton and although I was born in Chicago, my family is from Guinea and Liberia. University of Illinois at Chicago is my alma mater. Fortunately, I was able to further my education by spending half my academic career between Germany and Austria through the Benjamin A. Gilman program where I studied finance and international economics.
         </p>
+    </div>
+    </div>
+    <div style="text-align: left;" class="col-6">
+        <div class="mb-3">
+            <header style="margin-bottom: 2rem; font-size: 300%;">Contact Bleh Nmah</header>
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="textarea" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here."></textarea>
+            <div style="margin-top: 1rem; height: 100%;" class="col-12">
+                <button class="btn btn-light" type="submit">Submit</button>
+            </div>
+        </div>
     </div>
 </div>
 

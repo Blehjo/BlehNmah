@@ -1,30 +1,26 @@
 ﻿<Properties StartupConfiguration="{E045C135-5114-4704-AFB3-98F13CB336BE}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmptyJSONFile.json">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.RazorPagesBlehNmah PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/About.cshtml">
     <Files>
-      <File FileName="Pages/Paintings/Details.cshtml" />
-      <File FileName="Pages/Photographs/Details.cshtml" />
-      <File FileName="Pages/Paintings/Index.cshtml" />
-      <File FileName="Models/Painting.cs" Line="1" Column="1" />
-      <File FileName="Pages/Index.cshtml" Line="14" Column="165" />
-      <File FileName="EmptyJSONFile.json" Line="172" Column="61" />
+      <File FileName="Pages/About.cshtml" Line="10" Column="47" />
+      <File FileName="Pages/Index.cshtml" Line="43" Column="154" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RazorPagesBlehNmah" expanded="True">
             <Node name="RazorPagesBlehNmah" expanded="True">
-              <Node name="Migrations" selected="True" />
+              <Node name="Pages" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.RazorPagesBlehNmah PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
