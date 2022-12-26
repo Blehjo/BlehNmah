@@ -2,20 +2,20 @@
 
   &nbsp;
   # Table of Contents:
-  * [Installation](#installation)
+  * [Visit](#site)
   * [Usage](#usage)
   * [Future Developments](#future)
   * [Questions](#questions)
   
 ---
 &nbsp;
-  ## Installation:
+  ## site:
 The application is deployed [here](https://blehnmah.com).
 
 
-  &nbsp;
-  ## Usage:
-  The application is fully responsive. These screenshots are taken from a desktop computer.
+&nbsp;
+## Usage:
+The application is fully responsive. These screenshots are taken from a desktop computer.
 
 &nbsp;
 Images from the site
@@ -56,9 +56,9 @@ In a future development, Bleh Nmah:
   * Will use AWS to store photos
   * Will allow users to purchase posters
 
-  &nbsp;
-  ## Questions:
-  If you have any questions, the contact information is below. Additionally, you may email blehnmah@gmail.com.
+&nbsp;
+## Questions:
+If you have any questions, the contact information is below. Additionally, you may email blehnmah@gmail.com.
 
   #### Bleh Seton: 
   * Github: [blehjo](https://github.com/Blehjo)
