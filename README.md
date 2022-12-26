@@ -18,28 +18,36 @@ The application is deployed [here](https://blehnmah.com).
   The application is fully responsive. These screenshots are taken from a desktop computer.
 
 &nbsp;
-Landing Page
-<img width="1439" alt="landing-page" src="https://user-images.githubusercontent.com/89440573/209405138-28133852-3500-4c65-82ec-6f55659c8feb.png">
+Images from the site
 
 &nbsp;
-<img width="1440" alt="landing-page-2" src="https://user-images.githubusercontent.com/89440573/209405153-8b7794fc-177b-4775-93f5-2b3460c8ba72.png">
-
-
-&nbsp;
-Collections Pages
-<img width="1440" alt="collections-page" src="https://user-images.githubusercontent.com/89440573/209405174-7cac254b-f95e-42be-b01c-0f1d50af0cb6.png">
+<img width="1903" alt="landingpage" src="https://user-images.githubusercontent.com/89440573/209512419-5fa20dda-8053-4e02-af55-0a437dc4c6e0.png">
 
 &nbsp;
-Paintings Page
-<img width="1440" alt="Screenshot 2022-12-23 at 2 05 15 PM" src="https://user-images.githubusercontent.com/89440573/209405208-5bb76273-4a56-4e67-87d3-6e59147ae2ae.png">
-
-&nbsp;
-<img width="1440" alt="Screenshot 2022-12-23 at 2 05 32 PM" src="https://user-images.githubusercontent.com/89440573/209405220-093ff137-250d-44c0-8340-a805ba16a5a9.png">
+<img width="1905" alt="collectionslandingpage" src="https://user-images.githubusercontent.com/89440573/209512482-caded93b-f093-42f8-93e5-119eca4a453a.png">
 
 
 &nbsp;
-Single Painting Page
+<img width="1905" alt="collectionspage" src="https://user-images.githubusercontent.com/89440573/209512536-8c4255ec-6101-4429-994a-b1e1821cb5ae.png">
+
+&nbsp;
+<img width="1440" alt="collection-painting-page" src="https://user-images.githubusercontent.com/89440573/209512685-e4384b10-0225-4ad0-8776-4118abeeea7f.png">
+
+&nbsp;
+<img width="1904" alt="modalcollectionspage" src="https://user-images.githubusercontent.com/89440573/209512773-43bd5fe2-ad0c-4674-b872-a88e18ec01b3.png">
+
+
+&nbsp;
+![paintingsmodalpage](https://user-images.githubusercontent.com/89440573/209513303-e55db4a6-9edd-4791-93a0-86299c6d085f.jpg)
+
+&nbsp;
+![paintingpage4](https://user-images.githubusercontent.com/89440573/209513334-92ad2284-e33e-4307-87d0-df619ef449c6.jpg)
+
+&nbsp;
 <img width="1440" alt="Screenshot 2022-12-23 at 2 06 12 PM" src="https://user-images.githubusercontent.com/89440573/209405263-e5057e43-a6f3-4b95-8298-81eccfef2862.png">
+
+&nbsp;
+<img width="1906" alt="aboutpage" src="https://user-images.githubusercontent.com/89440573/209513049-56d1e72a-0b2d-4a5c-8589-9d69eae11f71.png">
 
 &nbsp;
   ## Future:
@@ -50,7 +58,7 @@ In a future development, Bleh Nmah:
 
   &nbsp;
   ## Questions:
-  If you need any further assistance, the contact information of the group members is below. Additionally, you may email gheistshell@gmail.com or visit us on Discord [@ShellGeist](https://discord.gg/sKywbh5R)
+  If you have any questions, the contact information is below. Additionally, you may email blehnmah@gmail.com.
 
   #### Bleh Seton: 
   * Github: [blehjo](https://github.com/Blehjo)
