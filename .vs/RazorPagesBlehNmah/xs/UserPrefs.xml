@@ -12,10 +12,7 @@
         <State name="__root__">
           <Node name="RazorPagesBlehNmah" expanded="True">
             <Node name="RazorPagesBlehNmah" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Collections" expanded="True" />
-                <Node name="About.cshtml" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
