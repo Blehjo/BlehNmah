@@ -17,15 +17,23 @@
                 </div>
             </a>
         </div>
-        <div style="" class="modal fade @item.Title" id="modal-@(item.Id)" tabindex="-1" aria-labelledby="@item.Title" aria-hidden="true">
+        <div class="modal fade" id="modal-@(item.Id)" data-bs-keyboard="false" tabindex="-1" aria-labelledby="@item.Title" aria-hidden="true">
             <div style="text-align: center;" class="modal-dialog modal-lg">
-                <div class="card">
-                    <img style="width: auto; height: auto;" src="@Html.DisplayFor(modelItem => item.MediaLocation)" class="card-img-top" alt="@Html.DisplayFor(modelItem => item.Title)">
-                    <div style="" class="card-img-overlay">
-                        <h1 style="color: white; font-size: 200%;" class="fs-5" id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</h1>
-                        <a role="button" class="btn btn-light" style="text-decoration: none;" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-@(item.Id)">@Html.DisplayFor(modelItem => item.Title)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <img style="width: auto; height: auto;" src="@Html.DisplayFor(modelItem => item.MediaLocation)" alt="@Html.DisplayFor(modelItem => item.Title)">
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a role="button" class="btn btn-light" style="text-decoration: none;" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                        </div>
+                    </div>
             </div>
         </div>
     }

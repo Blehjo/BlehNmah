@@ -16555,16 +16555,6 @@
   "RootNamespace": "RazorPagesBlehNmah",
   "Documents": [
     {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Delete.cshtml",
-      "TargetPath": "Pages\\Collections\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Edit.cshtml",
-      "TargetPath": "Pages\\Photographs\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Index.cshtml",
       "TargetPath": "Pages\\Photographs\\Index.cshtml",
       "FileKind": "mvc"
@@ -16590,11 +16580,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Delete.cshtml",
-      "TargetPath": "Pages\\Paintings\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Details.cshtml",
       "TargetPath": "Pages\\Paintings\\Details.cshtml",
       "FileKind": "mvc"
@@ -16610,33 +16595,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Edit.cshtml",
-      "TargetPath": "Pages\\Collections\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Index.cshtml",
       "TargetPath": "Pages\\Collections\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Delete.cshtml",
-      "TargetPath": "Pages\\Photographs\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Details.cshtml",
       "TargetPath": "Pages\\Collections\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Create.cshtml",
-      "TargetPath": "Pages\\Photographs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Create.cshtml",
-      "TargetPath": "Pages\\Paintings\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16647,11 +16612,6 @@
     {
       "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Edit.cshtml",
-      "TargetPath": "Pages\\Paintings\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

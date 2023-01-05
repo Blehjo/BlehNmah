@@ -7,20 +7,54 @@
 
 <h1>Collections</h1>
 
-<div class="row row-cols-1 ">
-    @foreach (var item in Model.Collection)
-    {
-        <div class="mt-4 col">
-            <a asp-page="./Details" asp-route-id="@item.CollectionID">
-                <div style="position: relative; text-align: center;" class="card">
-                    <img src="@Html.DisplayFor(modelItem => item.CoverImage)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
-                    <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
-                    <div style="width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
-                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.CollectionName)</h5>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+    <ul class="nav nav-tabs nav-justified" id="collectionsTab" role="tablist" style="justify-content: space-evenly;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="paintings-tab" data-bs-toggle="tab" data-bs-target="#paintings-tab-pane" type="button" role="tab" aria-controls="paintings-tab-pane" aria-selected="true">Paintings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="photographs-tab" data-bs-toggle="tab" data-bs-target="#photographs-tab-pane" type="button" role="tab" aria-controls="photographs-tab-pane" aria-selected="false">Photographs</button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="paintings-tab-pane" role="tabpanel" aria-labelledby="paintings-tab" tabindex="0">
+            <div class="row row-cols-1 ">
+                @foreach (var item in Model.Collection.Take(10))
+                {
+                    <div class="mt-4 col">
+                        <a asp-page="./Details" asp-route-id="@item.CollectionID">
+                            <div style="position: relative; text-align: center;" class="card">
+                                <img src="@Html.DisplayFor(modelItem => item.CoverImage)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
+                                <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
+                                <div style="width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
+                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.CollectionName)</h5>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </a>
+                }
+            </div>
         </div>
-    }
-</div>
+        <div class="tab-pane fade" id="photographs-tab-pane" role="tabpanel" aria-labelledby="photographs-tab" tabindex="0">
+            <div class="row row-cols-1 ">
+                @foreach (var item in Model.Collection.Skip(10))
+                {
+                    <div class="mt-4 col">
+                        <a asp-page="./Details" asp-route-id="@item.CollectionID">
+                            <div style="position: relative; text-align: center;" class="card">
+                                <img src="@Html.DisplayFor(modelItem => item.CoverImage)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
+                                <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
+                                <div style="width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
+                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.CollectionName)</h5>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    

@@ -5,20 +5,20 @@
 }
 
 <div class="container text-center">
-    <div class="row  row-cols-xs-1">
-        <div class="col-3">
-            <div class="container-fluid">
+    <div class="row row-cols-xs-1">
+        <div class="col-xs-12 col-md-6 col-md-5 col-lg-4 col-xl-3" style="justify-content: center;">
+            <div>
                 <img src="https://i.imgur.com/2cZ2f9o.jpg" class="card-img-top" alt="profile-picture">
                 <div role="tabpanel">
-                    <div class="list-group list-group-flush" id="myList" role="tablist">
-                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#home" role="tab" aria-selected="true">Home</a>
-                        @foreach (var item in Model.Collection)
+                    <div style="width: 100%;" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a style="text-decoration: none; color: black; cursor: pointer;" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                        @foreach (var item in Model.Collection.Take(10))
                         {
-                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#@Html.DisplayFor(modelItem => item.CollectionName)" role="tab" aria-selected="false">@Html.DisplayFor(modelItem => item.CollectionName)</a>
+                            <a style="text-decoration: none; color: black; cursor: pointer;" class="nav-link" id="v-pills-@Html.DisplayFor(modelItem => item.CollectionName)-tab" data-bs-toggle="pill" data-bs-target="#v-pills-@Html.DisplayFor(modelItem => item.CollectionName)" role="tab" aria-controls="v-pills-@Html.DisplayFor(modelItem => item.CollectionName)" aria-selected="false">@Html.DisplayFor(modelItem => item.CollectionName)</a>
                         }
                     </div>
                 </div>
-                <div class="row row-cols-2 row-cols-lg-4" style="width: 15rem; text-align: center;">
+                <div class="row row-cols-xs-4" style="width: 15rem; margin: auto;">
                     <div class="col">
                         <a href='https://www.linkedin.com/in/bleh-s/'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" target="_blank" rel="noreferrer" /></a>
                     </div>
@@ -34,9 +34,9 @@
                 </div> 
             </div>
         </div>
-        <div class="col-9">
-            <div class="tab-content">
-                <div class="tab-pane " id="home" role="tabpanel">
+        <div class="col">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                     <div class="row">
                         <div class="container-fluid">
                             <div class="card text-bg-dark">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-md-2">
-                        @foreach (var item in Model.Collection)
+                        @foreach (var item in Model.Collection.Take(10))
                         {
                             <div class="mt-4 col">
                                 <a asp-page="./Collections/Details" asp-route-id="@item.CollectionID">
@@ -67,45 +67,45 @@
                         }
                     </div>
                 </div>
-                    @foreach (var item in Model.Collection)
-                    {
-                        <div class="tab-pane " id="@Html.DisplayFor(modelItem => item.CollectionName)" role="tabpanel">
-                            <div class="row">
-                                <div class="container-fluid">
-                                    <a asp-page="./Collections/Details" asp-route-id="@item.CollectionID">
-                                        <div class="card text-bg-dark">
-                                            <img src="@Html.DisplayFor(modelItem => item.CoverImage)" style="border-radius: .5rem; width: 100rem; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
-                                            <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
-                                            <div style="width: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
-                                                <h5 style="font-size: 200%;" class="card-title">@Html.DisplayFor(modelItem => item.CollectionName)</h5>
-                                                <p style="font-size: 150%;" class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
-                                            </div>
+                @foreach (var item in Model.Collection.Take(10))
+                {
+                    <div class="tab-pane fade show active" id="v-pills-@Html.DisplayFor(modelItem => item.CollectionName)" role="tabpanel" aria-labelledby="v-pills-@Html.DisplayFor(modelItem => item.CollectionName)-tab" tabindex="0">
+                        <div class="row">
+                            <div class="container-fluid">
+                                <a asp-page="./Collections/Details" asp-route-id="@item.CollectionID">
+                                    <div class="card text-bg-dark">
+                                        <img src="@Html.DisplayFor(modelItem => item.CoverImage)" style="border-radius: .5rem; width: 100rem; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.CollectionName)">
+                                        <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
+                                        <div style="width: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
+                                            <h5 style="font-size: 200%;" class="card-title">@Html.DisplayFor(modelItem => item.CollectionName)</h5>
+                                            <p style="font-size: 150%;" class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-2">
-                                @foreach (var painting in Model.Painting)
-                                {
-                                    @if (painting.CollectionID == item.CollectionID)
-                                    {
-                                        <div class="mt-4 col">
-                                            <a asp-page="./Paintings/Details" asp-route-id="@painting.Id">
-                                                <div style="position: relative; text-align: center;" class="card">
-                                                    <img src="@Html.DisplayFor(modelItem => painting.MediaLocation)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => painting.Title)">
-                                                    <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
-                                                    <div style="width: 100%; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
-                                                        <h5 style="font-size: 250%;" class="card-title">@Html.DisplayFor(modelItem => painting.Title)</h5>
-                                                        <p class="card-text">@Html.DisplayFor(modelItem => painting.Description)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    }
-                                }
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    }
-                </div>
+                        <div class="row row-cols-1 row-cols-md-2">
+                            @foreach (var painting in Model.Painting)
+                            {
+                                @if (painting.CollectionID == item.CollectionID)
+                                {
+                                    <div class="mt-4 col">
+                                        <a asp-page="./Paintings/Details" asp-route-id="@painting.Id">
+                                            <div style="position: relative; text-align: center;" class="card">
+                                                <img src="@Html.DisplayFor(modelItem => painting.MediaLocation)" style="border-radius: .5rem; width: 100%; height: 25rem; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => painting.Title)">
+                                                <div class="bg-dark p-2 bg-opacity-25 card-img-overlay"></div>
+                                                <div style="width: 100%; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); border-radius: .5rem;" class="text-white card-img-overlay">
+                                                    <h5 style="font-size: 250%;" class="card-title">@Html.DisplayFor(modelItem => painting.Title)</h5>
+                                                    <p class="card-text">@Html.DisplayFor(modelItem => painting.Description)</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                }
             </div>
+        </div>
 </div>

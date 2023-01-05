@@ -1,8 +1,16 @@
-@page
+@page "{id:int}"
 @model RazorPagesBlehNmah.Pages.Photographs.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.Photograph.Title;
+}
+
+@{
+    int i = Convert.ToInt32(ViewContext.RouteData.Values["id"]);
+}
+
+@{
+    int? collection = Model.Photograph.CollectionID;
 }
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -13,40 +21,43 @@
     </div>
     <div>
         <dl class="row">
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Photograph.Title)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Photograph.Title)
             </dd>
-            <dt class="col-sm-2">
+
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Photograph.Year)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Photograph.Year)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Photograph.Location)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Photograph.Location)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Photograph.MediaLocation)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Photograph.MediaLocation)
-            </dd>
-            <dt class="col-sm-2">
+            <dt class="category col-sm-4">
                 @Html.DisplayNameFor(model => model.Photograph.Collection)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="display col-sm-8">
                 @Html.DisplayFor(model => model.Photograph.CollectionID)
             </dd>
         </dl>
     </div>
     <div>
-        <a asp-page="./Edit" asp-route-id="@Model.Photograph?.Id">Edit</a> |
-        <a asp-page="./Index">Back to List</a>
+        <a role="button" class="btn btn-light" asp-page="./Index">Back to List</a>
+        @if (i > 1)
+        {
+            <a role="button" class="btn btn-light" asp-page="./Details" asp-route-id="@(i-1)">Prev</a>
+        }
+        @if (i != 154)
+        {
+            <a role="button" class="btn btn-light" asp-page="./Details" asp-route-id="@(i+1)">Next</a>
+        }
+        <a role="button" class="btn btn-light" asp-page="../Index/Collections/Details/" asp-route-id="@(1)">More From Collection</a>
     </div>
 </div>

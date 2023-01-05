@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using RazorPagesBlehNmah.DAL;
 using RazorPagesBlehNmah.Data;
 using RazorPagesBlehNmah.Models;
 

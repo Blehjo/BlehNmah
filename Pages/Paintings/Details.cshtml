@@ -5,6 +5,10 @@
     ViewData["Title"] = Model.Painting.Title;
 }
 
+@{
+    int i = Convert.ToInt32(ViewContext.RouteData.Values["id"]);
+}
+
 <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
         <div class="card">
@@ -52,6 +56,15 @@
         </dl>
     </div>
     <div>
-        <a role="button" class="btn btn-light" asp-page="../Collections/Details/" asp-route-id="@Model.Painting?.CollectionID">More From Collection</a>
+        <a role="button" class="btn btn-light" asp-page="./Index">Back to List</a>
+        @if (i > 1)
+        {
+            <a role="button" class="btn btn-light" asp-page="./Details" asp-route-id="@(i-1)">Prev</a>
+        }
+        @if (i != 53)
+        {
+            <a role="button" class="btn btn-light" asp-page="./Details" asp-route-id="@(i+1)">Next</a>
+        }
+        <a role="button" class="btn btn-light" asp-page="../Collections" asp-route-id="@Model.Painting?.CollectionID">More From Collection</a>
     </div>
 </div>

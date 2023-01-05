@@ -39,4 +39,7 @@
     <PackageReference Include="EntityFramework.Functions" Version="1.5.0" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\Photographs\Collections.cshtml" />
+  </ItemGroup>
 </Project>
