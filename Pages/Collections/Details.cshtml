@@ -5,7 +5,7 @@
     ViewData["Title"] = "Paintings";
 }
 
-@if (Convert.ToInt32(ViewContext.RouteData.Values["id"]) <= 52)
+@if (Convert.ToInt32(ViewContext.RouteData.Values["id"]) < 54)
 {
 
     @foreach (var item in Model.Painting)
@@ -29,10 +29,6 @@
         }
     }
 
-    <div>
-        <a role="button" class="btn btn-light" asp-page="./Index">Back to Collections</a>
-    </div>
-
     <div style="" class="modal" id="modal" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -43,7 +39,7 @@
                             {
                                 @if (Convert.ToInt32(ViewContext.RouteData.Values["id"]) == item.CollectionID)
                                 {
-                                    <div class="carousel-item active">
+                                    <div class="carousel-item @(item.Id == 1 ? "active" : "")">
                                         <a asp-page="../Paintings/Details" asp-route-id="@item.Id">
                                             <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" style="border-radius: .5rem; width: 100%; height: auto; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.Title)">
                                         </a>
@@ -101,8 +97,9 @@
                         {
                             @if (Convert.ToInt32(ViewContext.RouteData.Values["id"]) == item.CollectionID)
                             {
-                                <div class="carousel-item active">
+                                <div class="carousel-item @(item.Id == 1 ? "active" : "") ">
                                     <a asp-page="../Photographs/Details" asp-route-id="@item.Id">
+
                                         <img src="@Html.DisplayFor(modelItem => item.MediaLocation)" style="border-radius: .5rem; width: 100%; height: auto; object-fit: cover;" class="card-img img-fluid" alt="@Html.DisplayFor(modelItem => item.Title)">
                                     </a>
                                 </div>
@@ -122,3 +119,4 @@
         </div>
     </div>
 </div>
+
