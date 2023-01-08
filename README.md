@@ -1,17 +1,13 @@
 # Bleh Nmah
 
-  &nbsp;
   # Table of Contents:
   * [Site](#site)
   * [Usage](#usage)
   * [Future Developments](#future)
   * [Questions](#questions)
-  
----
-&nbsp;
+
   ## Site:
 The application is deployed [here](https://blehnmah.com).
-
 
 &nbsp;
 ## Usage:
