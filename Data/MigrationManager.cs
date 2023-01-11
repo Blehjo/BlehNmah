@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RazorPagesBlehNmah.Data
 {
-	public static class IWebHostExtensions
+	public static class MigrationManager
 	{
         public static WebApplication MigrateDatabase(this WebApplication webApp)
         {
