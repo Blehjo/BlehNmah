@@ -18,6 +18,7 @@ namespace RazorPagesBlehNmah.Data
                     catch (Exception ex)
                     {
                         //Log errors or do anything you think it's needed
+                        Console.WriteLine(ex);
                         throw;
                     }
                 }

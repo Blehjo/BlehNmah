@@ -42,8 +42,13 @@
   <ItemGroup>
     <Content Remove="Pages\Photographs\Collections.cshtml" />
   </ItemGroup>
-<Target Name="PrePublishTarget" AfterTargets="Publish">
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="7.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+  <Target Name="PrePublishTarget" AfterTargets="Publish">
     <Exec Command="echo  &quot;Migrating Database ...&quot;" />
     <Exec Command="dotnet-ef database update" />
-</Target>
+  </Target>
 </Project>
