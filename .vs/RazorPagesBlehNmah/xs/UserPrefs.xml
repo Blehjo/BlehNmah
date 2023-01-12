@@ -6,13 +6,21 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.RazorPagesBlehNmah PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/SeedData.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Data/MigrateDatabase.cs" Line="13" Column="18" />
+      <File FileName="Data/RazorPagesGalleryContext.cs" Line="1" Column="1" />
+      <File FileName="Models/SeedData.cs" Line="26" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RazorPagesBlehNmah" expanded="True">
             <Node name="RazorPagesBlehNmah" expanded="True">
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
