@@ -7,7 +7,7 @@
   * [Questions](#questions)
 
   ## Site:
-The application is deployed [here](https://blehnmah.com).
+The application is deployed [here](https://blehnmah.azurewebsites.net).
 
 &nbsp;
 ## Usage:
