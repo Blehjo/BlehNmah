@@ -12,7 +12,7 @@ builder.Services.AddDbContext<RazorPagesGalleryContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("RazorPagesGalleryContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesGalleryContext' not found.")));
 
 var app = builder.Build();
-
+app.MigrateDatabase();
 
 using (var scope = app.Services.CreateScope())
 {
@@ -37,7 +37,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MigrateDatabase();
+
 
 app.Run();
 
