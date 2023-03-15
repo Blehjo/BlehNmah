@@ -11,8 +11,8 @@ using RazorPagesBlehNmah.Data;
 namespace RazorPagesBlehNmah.Migrations
 {
     [DbContext(typeof(RazorPagesGalleryContext))]
-    [Migration("20230112024515_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230315154414_UpdatedCreate")]
+    partial class UpdatedCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -11369,11 +11369,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj",
+      "projectUniqueName": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj",
       "projectName": "RazorPagesBlehNmah",
-      "projectPath": "/Users/blehjo/projects/BlehNmah/RazorPagesBlehNmah.csproj",
+      "projectPath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/RazorPagesBlehNmah.csproj",
       "packagesPath": "/Users/blehjo/.nuget/packages/",
-      "outputPath": "/Users/blehjo/projects/BlehNmah/obj/",
+      "outputPath": "/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/blehjo/.nuget/NuGet/NuGet.Config"
@@ -11447,7 +11447,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
