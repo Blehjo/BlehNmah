@@ -20,16 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29sbGVjdGlvbnMvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29sbGVjdGlvbnMvRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29sbGVjdGlvbnMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Collections/Index.cshtml]
@@ -44,44 +36,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Paintings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFpbnRpbmdzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Photographs/Photollection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGhvdG9ncmFwaHMvUGhvdG9sbGVjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/Pages/Shared/_ValidationScriptsPartial.cshtml]

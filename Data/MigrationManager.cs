@@ -13,6 +13,7 @@ namespace RazorPagesBlehNmah.Data
                 {
                     try
                     {
+                        appContext.Database.EnsureDeleted();
                         appContext.Database.Migrate();
                     }
                     catch (Exception ex)

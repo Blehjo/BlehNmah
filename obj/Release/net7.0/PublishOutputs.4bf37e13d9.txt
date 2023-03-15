@@ -1,8 +1,6 @@
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/RazorPagesBlehNmah
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/appsettings.Development.json
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/appsettings.json
-/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/collections.json
-/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/paintings.json
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/RazorPagesBlehNmah.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/RazorPagesBlehNmah.runtimeconfig.json
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/RazorPagesBlehNmah.pdb
@@ -12,8 +10,6 @@
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/EntityFramework.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/EntityFramework.Functions.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Humanizer.dll
-/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/MessagePack.dll
-/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/MessagePack.Annotations.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.AspNetCore.Razor.Language.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.Build.dll
@@ -24,6 +20,7 @@
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.CSharp.Features.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.CSharp.Scripting.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.Elfie.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.Features.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.Razor.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.CodeAnalysis.Scripting.dll
@@ -52,7 +49,6 @@
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.IdentityModel.Tokens.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.NET.StringTools.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.SqlServer.Server.dll
-/Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.VisualStudio.Debugger.Contracts.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 /Users/blehjo/projects/RazorPagesBlehNmah/RazorPagesBlehNmah/obj/Release/net7.0/PubTmp/Out/dotnet-aspnet-codegenerator-design.dll
